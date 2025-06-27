@@ -1,0 +1,25 @@
+.projects{
+  text-align: center;
+}
+
+.projects-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects-img-container{
+  height: 150px;
+}
+
+.projects-content img{
+  height: 100%;
+}
+
+.projects-tools{
+  display: flex;
+}
+
+.projects-tools p{
+  margin-right: 8px;
+  margin-top: 5px;
+}

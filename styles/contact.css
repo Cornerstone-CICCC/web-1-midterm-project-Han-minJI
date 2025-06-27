@@ -1,0 +1,51 @@
+.contact-message{
+  background-color: rgb(213, 213, 213);
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-left{
+  border: 1px solid black;
+}
+
+.contact-left div{
+  border: 1px solid black;
+}
+
+.contact-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+  
+}
+
+.contact-location,
+.contact-email,
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.contact-location-title,
+.contact-email-title,
+.contact-info-title{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 80px;
+  border: 1px solid gray;
+}
+
+
+
+.fa-solid{
+  color: blue;
+  margin-right: 7px;
+}

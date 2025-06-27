@@ -1,0 +1,14 @@
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.home:nth-child(1){
+  text-align: center;
+}
+
+.home-image{
+  width: 200px;
+}

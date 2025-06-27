@@ -1,0 +1,24 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: gray;
+  height: 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.web-title{
+  width: 200px;
+  text-align: center;
+}
+
+.menubar{
+  display: flex;
+  justify-content: space-around;
+  flex:1
+}

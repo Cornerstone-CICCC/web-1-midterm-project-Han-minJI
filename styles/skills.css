@@ -1,0 +1,19 @@
+.skills{
+  text-align: center;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows:auto;
+}
+
+.skills-grid img{
+  width: 50px;
+}
+
+.skills-grid div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+.aboutme-container{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme-content{
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
