@@ -3,6 +3,7 @@
   font-family: Goldman;
 }
 
-body{
-  margin: 0;
+body {
+  background: linear-gradient(300deg, #3B1F84 0%, #2D6A97 61%, #264C9E 100% );
 }
+
