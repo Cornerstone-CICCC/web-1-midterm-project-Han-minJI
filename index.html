@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/experiences.css">
 
     <script src="https://kit.fontawesome.com/f2b584664c.js" crossorigin="anonymous"></script>
   </head>
@@ -23,21 +24,21 @@
     <header>
       <div class="web-title">Minji's Web</div>
       <div class="menubar">
-        <div><a href="#">Home</a></div>
-        <div><a href="#">About</a></div>
-        <div><a href="#">Skills</a></div>
-        <div><a href="#">Projects</a></div>
-        <div><a href="#">Experiences</a></div>
-        <div><a href="#">Contact</a></div>
+        <div><a href="#home">Home</a></div>
+        <div><a href="#aboutme">About</a></div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#experiences">Experiences</a></div>
+        <div><a href="#contact">Contact</a></div>
       </div>
     </header>
 
     <main>
       <!-- Home Section-->
-      <section class="home">
+      <section id="home" class="home">
         <div>
-          <div>Hi, I'm Minji</div>
-          <div>future Full Stack Developer</div>
+          <div class="first-line">Hi, I'm <span class="minji">Minji</span></div>
+          <div class="second-line">future Full Stack Developer</div>
         </div>
 
         <div>
@@ -46,17 +47,17 @@
       </section>
 
       <!-- About Me Section-->
-      <section>
+      <section id="aboutme" class="aboutme">
         <div class="aboutme-container">
-          <p class="aboutme">About Me</p>
+          <p class="aboutme-title">About Me</p>
           <p class="aboutme-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse, magni vel optio ducimus excepturi possimus quaerat eligendi recusandae, harum neque? Recusandae debitis consectetur facere, ipsam libero in minus! Omnis.</p>
         </div>
       </section>
 
       <!--Skills-->
-      <section>
+      <section id="skills" class="skills">
         <div class="skills-container">
-          <p class="skills">Skills</p>
+          <p class="skills-title">Skills</p>
           <div class="skills-grid">
             <div class="skills-java">
               <img src="images/java-min.png">
@@ -70,22 +71,22 @@
               <img src="images/android-min.png">
               <p>Android</p>
             </div>
-            <div class="skills-c++">
+            <div class="skills-c">
               <img src="images/c-min.png">
               <p>C++</p>
             </div>
-            <div>
             <div class="skills-unity">
               <img src="images/unity-min.png">
               <p>Unity</p>
             </div>
-            </div>
-            
+          </div>
+        </div>
+
       </section>
 
       <!--Projects section-->
-      <section>
-        <p class="projects">Proejcts</p>
+      <section id="projects" class="projects">
+        <p class="projects-title">Proejcts</p>
         <div class="projects-content">
           <div>
             <div class="projects-img-container">
@@ -111,57 +112,85 @@
       </section>
 
       <!--Experiences section-->
-      <section>
-        <p>Experiences</p>
-        <div>
+      <section id="experiences" class="experiences">
+        <p class="experiences-title">Experiences</p>
+        <div class="experience-container">
+          <div class="experience-element">
+            <div class="experience-element-content">
+              <div class="experience-element-content-info">
+                <div class="experience-content-title">
+                  Frontend Developer
+                </div>
+                <div class="experience-content-year">20XX~20XX</div>
+              </div>
+              <div class="experience-element-content-arrow-up"></div>
+
+              
+            </div>
+          </div>
+          
+          <div class="experience-element2">
+            <div class="experience-element-content">
+              <div class="experience-element-content-info">
+                <div class="experience-content-title">
+                  Backend Developer
+                </div>
+                <div class="experience-content-year">20XX~20XX</div>
+              </div>
+              <div class="experience-element-content-arrow-down"></div>
+
+              
+            </div>
+          </div>
 
         </div>
       </section>
       
       <!--Contact section-->
-      <section>
-        <p>Contact</p>
-        <div class="contact-message">
+      <section id="contact" class="contact">
+        <p class="contact-title">Contact</p>
+        <div class="contact-container">
           <div class="contact-left">
             <div>
               <p>Your Name</p>
-              <div>ex) sdf</div>
+              <input class="your-name-fill" placeholder="ex) Minji Han"></input>
             </div>
 
             <div>
               <p>Your E-mail</p>
-              <div>ex) minjihan@gmail.com</div>
+              <input class="your-email-fill" placeholder="ex) minjihan@gmail.com"></input>
             </div>
 
             <div>
               <p>Your Message</p>
+              <textarea class="your-message-fill" rows="5" cols="27" placeholder="Enter your meessage.."></textarea>
             </div>
 
-            <button>Submit</button>
+            <button class="submit-button">Submit</button>
           </div>
 
           <div class="contact-right">
-            <div class="contact-location">
+            <div class="contact-location-container">
               <div class="contact-location-title">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Location</p>
               </div>
-              <div>
+              <div class="contact-location">
                 Vancouver, Canada
               </div>
             </div>
 
-            <div class="contact-email">
+            <div class="contact-email-container">
               <div class="contact-email-title">
                 <i class="fa-solid fa-envelope"></i>
                 <p>E-mail</p>
               </div>
-              <div>
+              <div class="contact-email">
                 hanminji77@gmail.com
               </div>
             </div>
 
-            <div class="contact-info">
+            <div class="contact-info-container">
               <div class="contact-info-title">
                 <i class="fa-solid fa-circle-info"></i>
                 <p>Info</p>
@@ -170,7 +199,8 @@
                 <i class="fa-brands fa-square-github"></i>
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-square-instagram"></i>
-                
+                <i class="fa-brands fa-facebook"></i>
+              </div>
               </div>
             </div>
 

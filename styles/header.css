@@ -2,22 +2,33 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  
 
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 20px;
+  left: 70px;
+  right: 70px;
+  height: 100px;
 
+  border-bottom: 1px solid #F1F1E6;
+}
+
+a {
+  color: #F1F1E6;
+  text-decoration: none;
 }
 
 .web-title{
-  width: 200px;
+  width: 300px;
   text-align: center;
+  font-size: 38px;
+  margin-right: 30px;
 }
 
 .menubar{
   display: flex;
-  justify-content: space-around;
-  flex:1
+  justify-content: space-evenly;
+  flex:1;
+  font-size: 20px;
+  padding-left: 50px;
 }

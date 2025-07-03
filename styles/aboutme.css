@@ -1,11 +1,24 @@
+.aboutme{
+  scroll-margin-top: 160px;
+}
+
 .aboutme-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.aboutme-title{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
 .aboutme-content{
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 600px;
   text-align: center;
+  padding: 50px 100px;
+  border-radius: 30px;
+  background-color: rgba(167, 101, 176, 30%);
+  border: 2px solid #5461A7;
+  font-size: 19px;
 }

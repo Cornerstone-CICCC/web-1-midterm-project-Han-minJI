@@ -1,14 +1,29 @@
 .home{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding-top: 100px;
+  margin-top: 50px;
+  scroll-margin-top: 160px;
 }
 
 .home:nth-child(1){
   text-align: center;
 }
 
+.first-line{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.minji{
+  color: #BF71B4;
+}
+
+.second-line{
+  font-size: 35px;
+}
+
 .home-image{
-  width: 200px;
+  width: 300px;
 }

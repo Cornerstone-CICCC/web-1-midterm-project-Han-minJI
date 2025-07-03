@@ -1,14 +1,33 @@
 .projects{
+  scroll-margin-top: 160px;
+}
+
+.projects-title{
   text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .projects-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+
+.projects-content > div{
+  background-color: rgba(167, 101, 176, 30%);
+  border: 2px solid #5461A7;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+
 }
 
 .projects-img-container{
-  height: 150px;
+  height: 250px;
+  margin-bottom: 15px;
 }
 
 .projects-content img{
@@ -22,4 +41,5 @@
 .projects-tools p{
   margin-right: 8px;
   margin-top: 5px;
+  font-size: 25px;
 }

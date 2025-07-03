@@ -1,19 +1,41 @@
 .skills{
-  text-align: center;
+  scroll-margin-top: 160px;
 }
+
+.skills-title{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
 .skills-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows:auto;
+  padding-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 40px 50px;
+}
+
+.skills-grid > div{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(167, 101, 176, 30%);
+  border: 2px solid #5461A7;
+  border-radius: 20px;
+}
+
+.skills-grid > div > p{
+  font-size: 30px;
 }
 
 .skills-grid img{
-  width: 50px;
+  width: 80px;
 }
 
 .skills-grid div{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
