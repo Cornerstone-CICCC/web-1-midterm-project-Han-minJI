@@ -5,13 +5,17 @@
   scroll-behavior: smooth;
 }
 
+
+
 body {
   background: linear-gradient(25deg, #264C9E 0% , #2D6A97 39%, #3B1F84 100% );
   margin: 0;
-  padding-top: 200px;
+  padding-top: 170px;
   
 }
 
 section{
   margin-bottom: 200px;
 }
+
+

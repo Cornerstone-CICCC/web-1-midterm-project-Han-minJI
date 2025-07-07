@@ -26,7 +26,7 @@
   margin-left: 150px;
 }
 
-.contact-left > div p {
+.contact-left > div label {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
@@ -38,8 +38,8 @@
   margin-bottom: 20px;
 }
 
-.your-name-fill,
-.your-email-fill{
+#your-name-fill,
+#your-email-fill{
   margin-bottom: 5px;
   font-size: 20px;
   background-color: rgba(167, 101, 176, 30%);
@@ -49,9 +49,10 @@
   padding-bottom: 10px;
   padding-right: 16px;
   border-radius: 15px;
+  transition: all 0.4s ease;
 }
 
-.your-message-fill{
+#your-message-fill{
   background-color: rgba(167, 101, 176, 30%);
   border: 2px solid #5461A7;
   font-size: 20px;
@@ -61,8 +62,12 @@
   resize: none;
 }
 
-input:focus,
-textarea:focus{
+
+#your-name-fill:focus,
+#your-email-fill:focus,
+#your-message-fill:focus{
+  background-color: #F1F1E6;
+  color: #4b16b7;
   border: 2px solid #5461A7;
   outline: none;
 }
@@ -74,6 +79,14 @@ textarea:focus{
   font-size: 20px;
   padding: 10px 20px;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.submit-button:hover{
+  background-color: #F1F1E6;
+  color: #4b16b7;
+  
 }
 
 
@@ -123,7 +136,7 @@ textarea:focus{
 .contact-location,
 .contact-email{
   font-size: 18px;
-  color: #6630D2;
+  color: #4b16b7;
 }
 
 

@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 50px;
-  scroll-margin-top: 160px;
+  scroll-margin-top: 240px;
 }
 
 .home:nth-child(1){
@@ -16,14 +16,51 @@
   margin-bottom: 10px;
 }
 
+
 .minji{
   color: #BF71B4;
 }
 
 .second-line{
   font-size: 35px;
+  background-image: linear-gradient(45deg, #6171D4 , #8984E8 50%, #DA91FA 100%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  width: 510px;
+  word-break: keep-all;
 }
 
+#cursor {
+  border-left: 2px solid #2d0c82; 
+  animation: blink 0.7s infinite;
+  display: inline-block;
+  margin-left: 2px;
+  height: 33px; 
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .home-image{
-  width: 300px;
+  width: 350px;
+  animation: motion 1s ease-in 0s infinite alternate;
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes motion{
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(30px); }
 }

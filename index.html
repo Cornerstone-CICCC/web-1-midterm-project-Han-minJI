@@ -21,24 +21,30 @@
     <script src="https://kit.fontawesome.com/f2b584664c.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="web-title">Minji's Web</div>
-      <div class="menubar">
-        <div><a href="#home">Home</a></div>
-        <div><a href="#aboutme">About</a></div>
-        <div><a href="#skills">Skills</a></div>
-        <div><a href="#projects">Projects</a></div>
-        <div><a href="#experiences">Experiences</a></div>
-        <div><a href="#contact">Contact</a></div>
-      </div>
-    </header>
+    <div id="header">
+      <header>
+        <div class="web-title"><a href="#home" >Minji's Web</a></div>
+        <div class="menubar">
+          <div><a href="#home">Home</a></div>
+          <div><a href="#aboutme">About</a></div>
+          <div><a href="#skills">Skills</a></div>
+          <div><a href="#projects">Projects</a></div>
+          <div><a href="#experiences">Experiences</a></div>
+          <div><a href="#contact">Contact</a></div>
+        </div>
+      </header>
+    </div>
+    
 
     <main>
       <!-- Home Section-->
       <section id="home" class="home">
         <div>
           <div class="first-line">Hi, I'm <span class="minji">Minji</span></div>
-          <div class="second-line">future Full Stack Developer</div>
+          <div class="second-line type-effect">
+            
+            <span id="text"></span><span id="cursor"></span>
+          </div>
         </div>
 
         <div>
@@ -59,23 +65,23 @@
         <div class="skills-container">
           <p class="skills-title">Skills</p>
           <div class="skills-grid">
-            <div class="skills-java">
+            <div class="skills-java skills-box skills-anim">
               <img src="images/java-min.png">
               <p>JAVA</p>
             </div>
-            <div class="skills-javascript">
+            <div class="skills-javascript skills-box skills-anim">
               <img src="images/js-min.png">
               <p>Javascript</p>
             </div>
-            <div class="skills-android">
+            <div class="skills-android skills-box skills-anim">
               <img src="images/android-min.png">
               <p>Android</p>
             </div>
-            <div class="skills-c">
+            <div class="skills-c skills-box skills-anim">
               <img src="images/c-min.png">
               <p>C++</p>
             </div>
-            <div class="skills-unity">
+            <div class="skills-unity skills-box skills-anim">
               <img src="images/unity-min.png">
               <p>Unity</p>
             </div>
@@ -150,24 +156,24 @@
       <section id="contact" class="contact">
         <p class="contact-title">Contact</p>
         <div class="contact-container">
-          <div class="contact-left">
+          <form action="" method="get" class="contact-left">
             <div>
-              <p>Your Name</p>
-              <input class="your-name-fill" placeholder="ex) Minji Han"></input>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="your-name-fill" required placeholder="ex) Minji Han"></input>
             </div>
 
             <div>
-              <p>Your E-mail</p>
-              <input class="your-email-fill" placeholder="ex) minjihan@gmail.com"></input>
+              <label for="email">Your E-mail</label>
+              <input type="email" name="email" id="your-email-fill" required placeholder="ex) minjihan@gmail.com"></input>
             </div>
 
             <div>
-              <p>Your Message</p>
-              <textarea class="your-message-fill" rows="5" cols="27" placeholder="Enter your meessage.."></textarea>
+              <label for="message">Your Message</label>
+              <textarea id="your-message-fill" rows="5" cols="27" name="message" placeholder="Enter your meessage.."></textarea>
             </div>
 
-            <button class="submit-button">Submit</button>
-          </div>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
 
           <div class="contact-right">
             <div class="contact-location-container">
@@ -213,5 +219,8 @@
     <footer>
 
     </footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/home.js"></script>
   </body>
 </html>
