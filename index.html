@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/experiences.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
     <script src="https://kit.fontawesome.com/f2b584664c.js" crossorigin="anonymous"></script>
   </head>
@@ -56,7 +57,9 @@
       <section id="aboutme" class="aboutme">
         <div class="aboutme-container">
           <p class="aboutme-title">About Me</p>
-          <p class="aboutme-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse, magni vel optio ducimus excepturi possimus quaerat eligendi recusandae, harum neque? Recusandae debitis consectetur facere, ipsam libero in minus! Omnis.</p>
+          <p class="aboutme-content">I'm a computer science student. I'd like to become a full-stack developer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse, laborum facere rerum eos reiciendis repudiandae a voluptate! Voluptatibus quas voluptatum exercitationem tempore illum harum nisi dignissimos? Reiciendis, perspiciatis asperiores?
+          </p>
         </div>
       </section>
 
@@ -156,7 +159,7 @@
       <section id="contact" class="contact">
         <p class="contact-title">Contact</p>
         <div class="contact-container">
-          <form action="" method="get" class="contact-left">
+          <form action="" method="get" class="contact-left" id="contact-left">
             <div>
               <label for="name">Your Name</label>
               <input type="text" name="name" id="your-name-fill" required placeholder="ex) Minji Han"></input>
@@ -202,10 +205,19 @@
                 <p>Info</p>
               </div>
               <div class="contact-info-icons">
-                <i class="fa-brands fa-square-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
+                <a href="https://github.com/Han-minJI?tab=repositories">
+                  <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/feed/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                
               </div>
               </div>
             </div>
@@ -222,5 +234,6 @@
 
     <script src="scripts/header.js"></script>
     <script src="scripts/home.js"></script>
+    <script src="scripts/contact.js"></script>
   </body>
 </html>

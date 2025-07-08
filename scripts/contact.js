@@ -1,4 +1,7 @@
-const yourName = document.querySelector(your-name-fill)
-const yourEmail = document.querySelector(your-email-fill)
-const yourMessage = document.querySelector(your-message-fill)
+const form = document.getElementById("contact-left")
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  
+  form.reset()
+})

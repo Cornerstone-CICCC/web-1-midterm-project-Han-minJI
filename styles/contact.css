@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .contact-left > div label {
@@ -96,7 +96,7 @@
   flex-direction: column;
   justify-content: center;
   width: 350px;
-  margin-right: 150px;
+  /* margin-right: 150px; */
 }
 
 .contact-location-container,
@@ -110,7 +110,7 @@
   border: 2px solid #5461A7;
   border-radius: 15px;
 
-  padding-left: 30px;
+  padding-left: 40px;
   padding-bottom: 20px;
   margin-bottom: 40px;
   
@@ -135,7 +135,8 @@
 
 .contact-location,
 .contact-email{
-  font-size: 18px;
+  font-size: 21px;
+  margin-top: 5px;
   color: #4b16b7;
 }
 
@@ -148,10 +149,15 @@
 .contact-info-icons{
   display: flex;
   justify-content: space-between;
-  padding-right: 50px;
-  padding-left: 3px;
+  margin-top: 5px;
+  padding-right: 70px;
 }
 
 .fa-brands{
   font-size: 40px;
+  transition: color 0.5s ease;
+}
+
+.fa-brands:hover{
+  color: #4b16b7;
 }
